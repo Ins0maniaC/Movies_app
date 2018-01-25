@@ -78,7 +78,7 @@ end
     param :path, :movie_id, :integer, :required, "Movie id"
     notes 'Notes...'
 end
-  def delete
+  def destroy
     @topic.destroy
     respond_to do |format|
       format.html { redirect_to topics_url, notice: 'Topic was successfully destroyed.' }
